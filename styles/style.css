@@ -1,3 +1,8 @@
+#profile-pic {
+    max-height: 40px; 
+    margin-right: 10px;
+}
+
 footer {
     bottom: 0;
     width: 100%;
@@ -14,33 +19,37 @@ iframe {
     margin-left: 20px;
 }
 
-.slideshow {
+.image-container {
     position: relative;
-    height: 400px;
-    overflow: hidden;
-  }
-  
-  .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
   }
   
-  .slide.active {
-    background-image: url('images/background1.jpeg'); background-size: 100%;
-    opacity: 1;
-  }
-  
-  .slide-text {
+.image-text {
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #fff;
-    font-size: 24px;
+    color: white;
+    background-color: rgba(34, 34, 34, 0.649);
+    border-radius: 5px;
+    padding: 8px;
+  }
+  
+.image-text h1 {
+    font-family: "Arial", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+.image-text p {
+    font-family: "Arial", sans-serif;
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+.full-width-image {
+    width: 100%;
+    display: block;
   }
